@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - ToastJS</title>
+    <link rel="stylesheet" href="./css/componente_visual_estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <div class="demo-card">
+        <h1>ToastJS Demo</h1>
+        <p>Librería de notificaciones flotantes.</p>
+        <div class="btn-grid">
+            <button class="demo-btn btn-success" onclick="Toast.success('¡Operación completada con éxito!')">
+                Toast Success
+            </button>
+            <button class="demo-btn btn-error" onclick="Toast.error('Error al conectar con la base de datos')">
+                Toast Error
+            </button>
+            <button class="demo-btn btn-warning" onclick="Toast.warning('Advertencia: Revisa los campos obligatorios')">
+                Toast Warning
+            </button>
+            <button class="demo-btn btn-info" onclick="Toast.info('Tienes una nueva actualización disponible')">
+                Toast Info
+            </button>
+        </div>
+    </div>
+    <!-- Carga del Componente Visual -->
+    <script src="./js/componente_visual.js"></script>
+</body>
+</html>
