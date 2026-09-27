@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo - ToastJS</title>
+    <title>ToastJS - Componente Visual Reutilizable</title>
+    <!-- Hoja de estilos del componente -->
     <link rel="stylesheet" href="./css/componente_visual_estilos.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
 
-    <div class="demo-card">
+    <div class="container">
         <h1>ToastJS Demo</h1>
-        <p>Librería de notificaciones flotantes.</p>
+        <p>Librería reutilizable de notificaciones flotantes con soporte de imágenes y barra temporal.</p>
+        <!-- Sección 1: Con imágenes personalizadas -->
+        <div class="section-title">Notificaciones con Imágenes (Carpeta /img)</div>
         <div class="btn-grid">
-            <button class="demo-btn btn-success" onclick="Toast.success('¡Operación completada con éxito!')">
-                Toast Success
+            <button class="demo-btn btn-info" id="btnAvatar">
+                Mensaje de Usuario
             </button>
-            <button class="demo-btn btn-error" onclick="Toast.error('Error al conectar con la base de datos')">
-                Toast Error
+            <button class="demo-btn btn-success" id="btnPedido">
+                Producto Enviado
             </button>
-            <button class="demo-btn btn-warning" onclick="Toast.warning('Advertencia: Revisa los campos obligatorios')">
-                Toast Warning
+        </div>
+        <!-- Sección 2: Sin imágenes (Iconos nativos) -->
+        <div class="section-title">Notificaciones Estándar (Sin Imagen)</div>
+        <div class="btn-grid">
+            <button class="demo-btn btn-warning" id="btnAlerta">
+                Advertencia
             </button>
-            <button class="demo-btn btn-info" onclick="Toast.info('Tienes una nueva actualización disponible')">
-                Toast Info
+            <button class="demo-btn btn-error" id="btnError">
+                Error Crítico
             </button>
         </div>
     </div>
-    <!-- Carga del Componente Visual -->
+
+    <!-- Script del componente -->
     <script src="./js/componente_visual.js"></script>
+
+    <!-- Prueba -->
+    <script src="./js/prueba.js"> </script>
 </body>
 </html>
