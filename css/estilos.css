@@ -12,6 +12,8 @@
             align-items: center;
             justify-content: center;
             padding: 24px;
+            flex-direction: column; /* Alinea los elementos verticalmente */
+            gap: 14px;
         }
         .container {
             background: #ffffff;
@@ -31,6 +33,18 @@
             font-size: 15px;
             color: #718096;
             margin-bottom: 28px;
+        }
+        .nav-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
         }
         .section-title {
             font-size: 14px;
